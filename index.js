@@ -1,21 +1,21 @@
 const driver = {}
 
-function updateDriverWithKeyAndValue(driver, key, value) {
-    return {...driver, [key]: value };
+function updateDriverWithKeyAndValue(driver, car, acura) {
+    return {...driver, [car]: acura };
 };
 
-function destructivelyUpdateDriverWithKeyAndValue(driver, key, value) {
-    driver[key] = value 
+function destructivelyUpdateDriverWithKeyAndValue(driver, car, acura) {
+    driver[car] = acura
     return driver 
 };
 
-function deleteFromDriverByKey(driver, key) {
+function deleteFromDriverByKey(driver, car) {
     const newDriver = {...driver}
-    delete newDriver[key];
+    delete newDriver[car];
     return newDriver 
 };
 
-function destructivelyDeleteFromDriverByKey(driver, key) {
-    delete driver[key]
+function destructivelyDeleteFromDriverByKey(driver, car) {
+    delete driver[car]
     return driver 
 };
